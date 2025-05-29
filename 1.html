@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Window</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: url("background.jpg") no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-box {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      border-radius: 10px;
+      text-align: center;
+      width: 350px;
+      color: white;
+    }
+
+    .login-box img {
+      width: 100px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .login-box h2 {
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    .login-box input[type="email"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid white;
+      color: white;
+      font-size: 16px;
+    }
+
+    .login-box input[type="checkbox"] {
+      margin-top: 20px;
+    }
+
+    .login-box label {
+      font-size: 14px;
+      margin-left: 5px;
+    }
+
+    .login-box a {
+      color: #00f;
+      text-decoration: none;
+    }
+
+    .login-box button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background: #04AA6D;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .login-box button:hover {
+      background: #039f62;
+    }
+  </style>
+</head>
+<body>
+
+<div class="login-box">
+  <img src="avatar.png" alt="Avatar">
+  <h2>LOGIN WINDOW</h2>
+  <form>
+    <input type="email" placeholder="Your Email Address" required>
+    <input type="password" placeholder="Your Password" required>
+    <div style="text-align: left; margin-top: 10px;">
+      <input type="checkbox" id="agree">
+      <label for="agree">Agree With <a href="#">Terms & Condition</a></label>
+    </div>
+    <button type="submit">Login</button>
+  </form>
+</div>
+
+</body>
+</html>
